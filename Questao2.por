@@ -1,27 +1,26 @@
 programa
 {
 	
-	funcao inicio()
+	funcao inicio(){
 	
-	{	real idadedias
-		inteiro idadeanos
-		real idademeses
-		real dias
-
-		escreva("Digite a sua idade expressa apenas em dias: ")
-		leia(dias)
-
-		idadeanos = (dias / 365)
-		idademeses = (idadeanos % 30)
-		idadedias = (idademeses * 30)
-
-		escreva("A idade em anos é de: "  + idadeanos  +  ("anos"))
-		escreva("\nA idade em meses é de: " + idademeses + ("meses"))
-		escreva("\nA idade em dias é de: "  + dias  + ("dias"))
+		inteiro anos, anosd, mes, di, D
+		anos = 365
+		anosd = anos * 365
 		
+
+		escreva("escreva sua idade (somente em dias) " )
+		leia(di)
+
+		anos = di/anos
+		escreva ("\nSua idade em anos é: " + anos)
+
+		mes = (di - (anos * 365)) / 30
+		escreva("\nSua idade em meses é: " + mes )
+
+		D = (anosd - di) % 30
+		escreva("\nSua idade em dias é: ", D )
+
 		
-		
-	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 455; 
+ * @POSICAO-CURSOR = 380; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
